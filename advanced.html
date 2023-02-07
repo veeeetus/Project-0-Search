@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #202124;" >
+        <div>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand background-color: #202124">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse justify-content-start">
+                        <ul class="navbar-nav m-2">
+                            <li class="nac-item">
+                                <img src="./images/logo.png" class="rounded img-fluid" style="max-height: 25px;">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" href="index.html">Google Search</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>        
+        <div>
+            <h4 class="text-danger m-4 p-2">Advanced search</h4>
+            <hr style="color: #303134">
+            <form action="https://www.google.com/search" name="f">  
+                <div class="row m-5">
+
+                    <!-- header -->
+                    <div class="col-1 text-white">
+                        Find pages containing...
+                    </div>
+                    <div class="col-4"></div>
+                    <div class="col-7 hidden-sm d-none d-lg-block text-white">
+                        Examples
+                    </div>
+                        
+                    <!-- first input-->
+                    <div class="col-2 text-white mt-3">
+                        All of the words
+                    </div>
+                    <div class="col-3 mt-3">
+                        <input type="text" style="background: #202124; border: 1px solid #5f6368; color: #bdc1c6; padding: 1px 8px; width: 100%">
+                    </div>
+                    <div class="col-6 hidden-sm d-none d-lg-block text-white mt-3">
+                        Write all words for example <b>tricolor rat terrier</b>
+                    </div> 
+
+                    <!-- second input -->
+                    <div class="col-2 text-white mt-3">
+                        Exactly one expression
+                    </div>
+                    <div class="col-3 mt-3">
+                        <input type="text" style="background: #202124; border: 1px solid #5f6368; color: #bdc1c6; padding: 1px 8px; width: 100%">
+                    </div>
+                    <div class="col-6 hidden-sm d-none d-lg-block text-white mt-3">
+                        Use quotation marks <b>"Dark Batman"</b>
+                    </div>  
+
+                    <!-- third input -->
+                    <div class="col-2 text-white mt-3">
+                        Any of given words
+                    </div>
+                    <div class="col-3 mt-3">
+                        <input type="text" style="background: #202124; border: 1px solid #5f6368; color: #bdc1c6; padding: 1px 8px; width: 100%">
+                    </div>
+                    <div class="col-6 hidden-sm d-none d-lg-block text-white mt-3">
+                        use OR <b>batman OR superman</b>
+                    </div>
+
+                    <!-- fourth input -->
+                    <div class="col-2 text-white mt-3">
+                        None of these words
+                    </div>
+                    <div class="col-3 mt-3">
+                        <input type="text" style="background: #202124; border: 1px solid #5f6368; color: #bdc1c6; padding: 1px 8px; width: 100%">
+                    </div>
+                    <div class="col-6 hidden-sm d-none d-lg-block text-white mt-3">
+                        use dash before word <b>-robin</b>
+                    </div>
+                    
+                    <div class="col-2"></div>
+                    <div class="col-3 mt-5 text-end">
+                        <input type="submit" class="btn btn-primary" value="Advanced search">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+    
