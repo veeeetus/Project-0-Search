@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- title -->
+        <title>Search</title>
+
+        <!-- links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    </head>
+    <body>
+        <nav class="text-end p-sm-3 p-2 ">
+            <a href="index.html" class="link link-secondary link-underline link-underline-opacity-0 text-white p-sm-2 p-sm-2 m-1">Google Search</a>
+        </nav>
+        <h3 class="text-danger offset-1 my-4">Advanced Search</h3>
+        <div class="border border-bottom border-dark-subtle"></div>
+
+
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-5 m-2">Find pages containing</div>
+                <div class="col-4 m-2 offset-5 d-none d-sm-inline">To do this with a searchbar.</div>
+            </div>
+
+            <form action="https://google.com/search">
+
+                <div class="row mt-5">
+                    <div class="col-5 text-secondary fs-5">All words:</div>
+                    <div class="col-7"><input class="form-control border border-dark-subtle" type="text" name="as_q"></div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-5 text-secondary fs-5">Exact this:</div>
+                    <div class="col-7"><input class="form-control border border-dark-subtle" type="text" name="as_epq"></div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-5 text-secondary fs-5">Any word:</div>
+                    <div class="col-7"><input class="form-control border border-dark-subtle" type="text" name="as_oq"></div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-5 text-secondary fs-5">None words:</div>
+                    <div class="col-7"><input class="form-control border border-dark-subtle" type="text" name="as_eq"></div>
+                </div>
+
+                <div class="row mt-5 justify-content-end">
+                    <input type="submit" class="col-5 btn btn-dark mx-3" value="Advanced Search">
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>
