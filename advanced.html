@@ -20,36 +20,41 @@
         <div class="border border-bottom border-dark-subtle"></div>
 
 
-        <div class="container">
-            <div class="row text-white">
-                <div class="col-5 m-2">Find pages containing</div>
-                <div class="col-4 m-2 offset-5 d-none d-sm-inline">To do this with a searchbar.</div>
+        <div class="container min-vw-100">
+            <div class="row text-white mt-3">
+                <div class="col-1 fix">Find pages containing</div>
+                <div class="col-4"></div>
+                <div class="col d-none d-md-inline">To do this with a searchbar.</div>
             </div>
 
             <form action="https://google.com/search">
 
                 <div class="row mt-5">
-                    <div class="col-5 text-secondary fs-5">All words:</div>
-                    <div class="col-7"><input class="form-control border border-dark-subtle" type="text" name="as_q"></div>
+                    <div class="col-5 col-sm-1 col-md-1 text-secondary fs-5 fix">All words:</div>
+                    <div class="col-7 col-md-4"><input class="form-control border border-dark-subtle" type="text" name="as_q"></div>
+                    <div class="col text-secondary fs-5 d-none d-md-inline">Type all words: tricolor rat terrier</div>
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-5 text-secondary fs-5">Exact this:</div>
-                    <div class="col-7"><input class="form-control border border-dark-subtle" type="text" name="as_epq"></div>
+                    <div class="col-5 col-sm-1 col-md-1 text-secondary fs-5 fix">Exact this:</div>
+                    <div class="col-7 col-md-4"><input class="form-control border border-dark-subtle" type="text" name="as_epq"></div>
+                    <div class="col text-secondary fs-5 d-none d-md-inline">Use quotation marks: "I'm batman"</div>
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-5 text-secondary fs-5">Any word:</div>
-                    <div class="col-7"><input class="form-control border border-dark-subtle" type="text" name="as_oq"></div>
+                    <div class="col-5 col-sm-1 col-md-1 text-secondary fs-5 fix">Any word:</div>
+                    <div class="col-7 col-md-4"><input class="form-control border border-dark-subtle" type="text" name="as_epq"></div>
+                    <div class="col text-secondary fs-5 d-none d-md-inline">use OR between: batman OR robin</div>
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-5 text-secondary fs-5">None words:</div>
-                    <div class="col-7"><input class="form-control border border-dark-subtle" type="text" name="as_eq"></div>
+                    <div class="col-5 col-sm-1 col-md-1 text-secondary fs-5 fix">None word:</div>
+                    <div class="col-7 col-md-4"><input class="form-control border border-dark-subtle" type="text" name="as_epq"></div>
+                    <div class="col text-secondary fs-5 d-none d-md-inline">Use single dash marks: -joker</div>
                 </div>
 
-                <div class="row mt-5 justify-content-end">
-                    <input type="submit" class="col-5 btn btn-dark mx-3" value="Advanced Search">
+                <div class="row mt-5 justify-content-end justify-content-sm-start fix mx-2">
+                    <input type="submit" class="col-6 col-sm-2 btn btn-dark offset-sm-3 " value="Advanced Search">
                 </div>
 
             </form>
